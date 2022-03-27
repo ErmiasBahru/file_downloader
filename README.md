@@ -7,3 +7,8 @@
 ```
 Usage: python downloader.py <file url>
 ```
+---
+
+### Screenshot: 
+
+<img src="./screenshot/ss-2.png">
