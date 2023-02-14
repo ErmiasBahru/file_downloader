@@ -13,8 +13,7 @@ file_size = int(response.headers.get("Content-Length", 0))
 # get the default filename
 default_filename = url.split("/")[-1]
 
-content_disposition = response.headers.get("Content-Disposition")
-if content_disposition:
+if content_disposition := response.headers.get("Content-Disposition"):
     value, params = cgi.parse_header(content_disposition)
     filename = params.get("filename", default_filename)
 else:
